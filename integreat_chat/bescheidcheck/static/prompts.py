@@ -55,32 +55,32 @@ one of the supported types. Do not try to guess beyond what the text says.
 
 ## Supported types
 
-- `ablehnung-einfach`
-  Das Schreiben bescheinigt die Ablehnung eines Asylantrags an, wobei
-  der Person keiner der 4 anerkannten Asylgründe zugstanden wird. Die
-  Person wird aufgefordert auszureißen.
+### BAMF / Asylverfahren
 
-- `anerkennung-subsidiaeer`
-  Das Schreiben beinhaltet, dass der Asylsuchenden Person "Subsidiärer Schutz"
-  zugestanden wird.
+Bei BAMF-Bescheiden, die mehrere Schutzformen nennen, gilt immer der
+höchste zuerkannte Status: Asyl vor Flüchtlingseigenschaft vor
+subsidiärem Schutz vor Abschiebungsverbot.
 
-- `obviously_unfounded_inadmissible`
-  A decision stating the application is "offensichtlich unbegründet" or
-  "offensichtlich unzulässig", possibly by BAMF or another authority.
+- `ladung-anhoerung`
+  Das Schreiben ist eine Einladung des BAMF zur persönlichen Anhörung im
+  Asylverfahren. Es nennt einen Termin, einen Ort und Hinweise zum Ablauf
+  der Anhörung.
 
-- `dublin_decision`
-  A Dublin-III decision / Zuständigkeitsbestimmungsbescheid /
-  Zuständigkeitsbestimmungsverfahren. The letter identifies another
-  Schengen state as responsible for examining the asylum claim.
+- `anerkennung-asyl`
+  Das Schreiben ist ein BAMF-Bescheid, nach dem die asylsuchende Person
+  als Asylberechtigte anerkannt wird.
 
-- `unsupported`
-  Any other letter that does not match one of the three supported types.
-  Examples: a positive acknowledgment (Anerkennung), a revocation
-  (Widerruf / Rücknahme), an exclusion (Ausweisung), or a
-  residence-permit refusal (Ablehnung Aufenthaltstitel).
-  If the document is not written in German or not an official letter by an
-  official German Agency, then classify it as unsupported.
+- `zuerkennung-fluechtlingseigenschaft`
+  Das Schreiben ist ein BAMF-Bescheid, nach dem der asylsuchenden Person
+  die Flüchtlingseigenschaft zuerkannt wird.
 
+- `zuerkennung-subsidiaerer-schutzstatus`
+  Das Schreiben ist ein BAMF-Bescheid, nach dem der asylsuchenden Person
+  subsidiärer Schutz zuerkannt wird.
+
+- `vorliegen-abschiebungsverbote`
+  Das Schreiben ist ein BAMF-Bescheid, in dem festgestellt wird, dass ein
+  Abschiebungsverbot vorliegt.
 
 ## Response format
 
