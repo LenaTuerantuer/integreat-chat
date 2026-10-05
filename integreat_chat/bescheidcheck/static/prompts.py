@@ -55,10 +55,14 @@ one of the supported types. Do not try to guess beyond what the text says.
 
 ## Supported types
 
-- `bamf_simple_rejection`
-  A BAMF (Bundesamt für Migration und Flüchtlinge) "einfache Ablehnung"
-  decision. Characteristic phrasing: "Ihr Asylantrag wird abgelehnt" with
-  BAMF letterhead.
+- `ablehnung-einfach`
+  Das Schreiben bescheinigt die Ablehnung eines Asylantrags an, wobei
+  der Person keiner der 4 anerkannten Asylgründe zugstanden wird. Die
+  Person wird aufgefordert auszureißen.
+
+- `anerkennung-subsidiaeer`
+  Das Schreiben beinhaltet, dass der Asylsuchenden Person "Subsidiärer Schutz"
+  zugestanden wird.
 
 - `obviously_unfounded_inadmissible`
   A decision stating the application is "offensichtlich unbegründet" or
@@ -74,6 +78,9 @@ one of the supported types. Do not try to guess beyond what the text says.
   Examples: a positive acknowledgment (Anerkennung), a revocation
   (Widerruf / Rücknahme), an exclusion (Ausweisung), or a
   residence-permit refusal (Ablehnung Aufenthaltstitel).
+  If the document is not written in German or not an official letter by an
+  official German Agency, then classify it as unsupported.
+
 
 ## Response format
 
