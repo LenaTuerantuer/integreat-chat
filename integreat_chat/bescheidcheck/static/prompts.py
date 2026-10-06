@@ -82,6 +82,12 @@ subsidiärem Schutz vor Abschiebungsverbot.
   Das Schreiben ist ein BAMF-Bescheid, in dem festgestellt wird, dass ein
   Abschiebungsverbot vorliegt.
 
+- `ablehnung-einfach`
+  Das Schreiben ist ein BAMF-Bescheid, nach dem der Asylantrag abgelehnt
+  wird. Der Person wird keine der vier Schutzformen zuerkannt
+  (Asylberechtigung, Flüchtlingseigenschaft, subsidiärer Schutz,
+  Abschiebungsverbot). Sie wird aufgefordert, Deutschland zu verlassen.
+
 ## Response format
 
 Return a JSON object with only these keys and no additional text:
